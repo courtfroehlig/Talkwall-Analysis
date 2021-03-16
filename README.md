@@ -1,5 +1,12 @@
 # Talkwall-Analysis
 
+Talkwall is an educational app intended for use both in classrooms and virtual learning environments. It has been designed to get more people engaged in productive talk for learning. The technology in itself is not revolutionary; it is how the teacher uses Talkwall that matters. The main task of the teacher is to align educational practice and technology in the classroom. Working with subject content, Talkwall can help the teacher to encourage the dialogue that leads to learning in lessons.
+
+This project analysises log data from students' use of Talkwall in dialogic lessons in England and Norway. There are two approaches to analysis: 
+
+1) LDA: Latent Dirichlet Analysis which is a form of topic modelling or probabilistic latent semantic analysis (pLSA). LDA is a generative statistical model that allows sets of observations to be explained by unobserved groups that explain why some parts of the data are similar.
+2) NA: Network analysis, described below. NA is used as a way to show teachers how the discussion progresses and to ensure all learners are paricipating equally and relevantly in the discussion.
+
 In each notebook titled Network-Analysis, I use Dedupe to create clusters of text contributions that are the same or slight variations of one text statement. I then create unique id's for each participant (including students and teacher) and unique consecutive id's for each text clusters (so that there is no overlap between participant id's and text id's). 
 
 I used these id's to create tuples of text and participant id's, which are entered as edges into a bipartite graph demonstrating the connections between students and ideas contributed to the Talkwall.
